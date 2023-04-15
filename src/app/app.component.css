@@ -1,0 +1,19 @@
+.btn-primary {
+  color: #fff;
+  background-color: #A32B37;
+  border-color: #932B37;
+}
+
+.btn-primary :hover {
+  color: #FFFFFF;
+  background-color: #B32B37;
+}
+
+.btn-primary :focus{
+  color: #FFFFFF;
+  background-color: #A32B37;
+}
+
+a{
+  color: #A32B37;
+};

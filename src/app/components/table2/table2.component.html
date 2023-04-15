@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="center">
+    <h2>Configuración detallada</h2>
+    <hr><br>
+    <div class="panel panel-primary filterable">
+      <div class="panel-heading">
+        <h3 class="panel-title">Parámetros</h3>
+        <div class="pull-right">
+          <button class="btn btn-default btn-xs btn-filter" (click)="activeFiltro=!activeFiltro"><span
+              class="glyphicon glyphicon-filter"></span>
+            Filtrar</button>
+        </div>
+      </div>
+      <table class="table table-bordered">
+        <thead>
+          <tr class="filters">
+            <th scope="col"><input type="text" class="form-control" placeholder="Filtro" [disabled]="!activeFiltro">
+            </th>
+            <th scope="col"><input type="text" class="form-control" placeholder="Detalle filtro"
+                [disabled]="!activeFiltro"></th>
+            <th scope="col"><input type="text" class="form-control" placeholder="% / valor SMVL"
+                [disabled]="!activeFiltro"></th>
+            <th scope="col"><input type="text" class="form-control" placeholder="Fecha vencimiento"
+                [disabled]="!activeFiltro"></th>
+            <th scope="col"><input type="text" class="form-control" placeholder="Estado" [disabled]="!activeFiltro">
+            </th>
+            <th scope="col"><input type="text" class="form-control" placeholder="Acciones" [disabled]="!activeFiltro">
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let objeto of lista">
+            <td>
+              <p *ngFor="let item of objeto.filtro">{{item}}<br></p>
+            </td>
+            <td>
+              <p *ngFor="let item of objeto.detalle">{{item}}<br></p>
+            </td>
+            <td>{{objeto.valorSMVL}}</td>
+            <td>{{objeto.fechaVencimiento}}</td>
+            <td class="switch"><app-flip-switch [idCreacion]="objeto.estado"></app-flip-switch></td>
+            <td><a href="#">Editar</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

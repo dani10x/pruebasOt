@@ -1,0 +1,132 @@
+<div class="container">
+  <div class="ptb-10 center">
+    <h2 class="configuracion">Configuración detallada</h2>
+    <hr>
+    <form class="row">
+      <div class="col">
+        <div class="row row1">
+          <div class="col">
+            <label for="condicionesModelo"><input type="checkbox" id="condicionesModelo" class="redCheck" (change)="activar('1')">Condiciones del
+              modelo</label><br>
+            <select name="condiciones" id="condiciones" class="slct1 mg-l-10" *ngIf="modeloCheck">
+              <option value="--">--Seleccione--</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+          <div class="col" *ngIf="modeloCheck">
+            <label for="modelo" class="mg-l-5">Modelo*:</label><br>
+            <select name="modelo" id="modelo" class="slct1">
+              <option value="--">--Selecione--</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+          <div class="col" *ngIf="modeloCheck">
+            <label for="modeloDesde" class="mg-l-5">Modelo desde*:</label><br>
+            <select name="modeloDesde" id="modeloDesde" class="slct1">
+              <option value="--">--Selecione--</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+          <div class="col" *ngIf="modeloCheck">
+            <label for="modeloHasta" class="mg-l-5">Modelo hasta*:</label><br>
+            <select name="modeloHasta" id="modeloHasta" class="slct1">
+              <option value="--">--Selecione--</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+        </div>
+        <div class="row row1">
+          <div class="col">
+            <label for="tipoServicio"><input type="checkbox" id="tipoServicio" (change)="activar('2')">Tipo servicio</label>
+            <div class="row" *ngIf="tipoCheck">
+              <select name="tipoServicio" id="tipoServicio">
+                <option value="--">--Seleccione--</option>
+                <option value="1">1</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row row1">
+          <div class="col">
+            <label for="claseVehiculo"><input type="checkbox" id="claseVehiculo" (change)="activar('3')">Clase vehiculo</label>
+            <div class="row" *ngIf="claseCheck">
+              <select name="claseVehiculo" id="claseVehiculo">
+                <option value="--">--Seleccione--</option>
+                <option value="1">1</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row row1">
+          <div class="col">
+            <label for="nivelServicio"><input type="checkbox" id="nivelServicio" (change)="activar('4')">Nivel de servicio</label>
+            <div class="row" *ngIf="nivelCheck">
+              <select name="nivelServicio" id="nivelServicio">
+                <option value="--">--Seleccione--</option>
+                <option value="1">1</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row row1">
+          <div class="col">
+            <label for="pasajeros"><input type="checkbox" id="pasajeros" (change)="activar('5')">Pasajeros</label>
+            <div class="row" *ngIf="pasajerosCheck">
+              <div class="col">
+                <div class="row-left">
+                  <label for="pasajerosDesde">Pasajeros desde*:</label><br>
+                  <input type="number" id="pasajerosDesde">
+                </div>
+                <div class="row-left">
+                  <label for="pasajerosHasta">Pasajeros hasta*:</label><br>
+                  <input type="number" id="pasajerosHasta">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row1">
+          <div class="col">
+            <label for="capacidadCarga"><input type="checkbox" id="capacidadCarga" (change)="activar('6')">Capacidad de carga</label>
+            <div class="row" *ngIf="capacidadCheck">
+              <div class="col">
+                <div class="row-left">
+                  <label for="capacidadDesde">Capacidad de carga desde*:</label><br>
+                  <input type="number" id="capacidadDesde" >
+                </div>
+                <div class="row-left">
+                  <label for="capacidadHasta">Capacidad de carga hasta*:</label><br>
+                  <input type="number" id="capacidadHasta">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row1">
+          <div class="col">
+            <label for="rangoPlacas"><input type="checkbox" id="rangoPlacas" (change)="activar('7')">Rango de placas</label>
+            <div class="row" *ngIf="placasCheck">
+              <div class="col">
+                <div class="row-left">
+                  <label for="placasDesde">Rango inicial*:</label><br>
+                  <input type="number" id="placasDesde">
+                </div>
+                <div class="row-left">
+                  <label for="placasHasta">Rango final*:</label><br>
+                  <input type="number" id="placasHasta">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="valorSMLV">% / Valor SMVL*: <input type="number" id="valorSMVL"></label>
+            <label for="fechaVencimiento">Fecha vencimiento*: <input type="date"></label>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </form>
+  </div>
+</div>

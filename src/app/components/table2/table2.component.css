@@ -1,0 +1,101 @@
+.center {
+  margin: 0px auto;
+}
+.container {
+  text-align: center;
+}
+td {
+  vertical-align: middle;
+}
+h2{
+  color: #A32B37;
+  font-size: medium;
+}
+p {
+  margin: 0px;
+}
+.switch {
+  text-align: left;
+}
+table{
+  border: black 1px solid;
+}
+thead{
+  background-color: gainsboro;
+}
+.pull-right{
+  text-align: right;
+}
+h3{
+  position: absolute;
+  font-size: large;
+  text-align: left;
+  margin: 7px;
+}
+.panel-heading{
+  background-color: #428bca;
+}
+.filterable {
+  margin-top: 15px;
+}
+.filterable .panel-heading .pull-right {
+  margin-top: -20px;
+}
+.filterable .filters input[disabled] {
+  background-color: transparent;
+  border: none;
+  cursor: auto;
+  box-shadow: none;
+  padding: 0;
+  height: auto;
+}
+.filterable .filters input[disabled]::-webkit-input-placeholder {
+  color: #333;
+}
+.filterable .filters input[disabled]::-moz-placeholder {
+  color: #333;
+}
+.filterable .filters input[disabled]:-ms-input-placeholder {
+  color: #333;
+}
+.form-control{
+  text-align: center;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #A32B37;
+  border-color: #932B37;
+}
+
+.btn-primary :hover {
+  color: #FFFFFF;
+  background-color: #B32B37;
+}
+
+.btn-primary :focus{
+  color: #FFFFFF;
+  background-color: #A32B37;
+}
+
+.panel-primary > .panel-heading{
+  background-color: #A32B37;
+  border-color: #932B37;
+  color: #FFF;
+}
+
+.panel-primary > .panel-body{
+  border-color: #932B37;
+}
+
+.panel-primary {
+  border-color: #932B37;
+}
+
+.panel-default {
+  border-color: #932B37;
+}
+
+a{
+  color: #A32B37;
+};

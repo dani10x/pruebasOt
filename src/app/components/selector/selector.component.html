@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="ptb-10 center">
+    <label for="vigencia">Vigencia: </label>
+    <select name="vigencia" [(ngModel)]="seleccionado" (change)="genereteComponent()">
+      <option [value]="item" *ngFor="let item of lista">{{item}}</option>
+    </select>
+  </div>
+</div>
+<app-table1 *ngIf="activar" [anio]="seleccionado"></app-table1>

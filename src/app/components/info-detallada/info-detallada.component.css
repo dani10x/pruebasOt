@@ -1,0 +1,63 @@
+.center {
+  margin: 0px auto;
+}
+
+.container {
+  text-align: center;
+}
+
+.ptb-10 {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+label {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 5px;
+}
+
+select {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 5px;
+  width: 15%;
+  margin-left: 3.5%;
+}
+
+h2 {
+  color: #A32B37;
+  font-size: medium;
+}
+
+hr {
+  border-color: black;
+}
+
+.row1 {
+  text-align: left;
+}
+
+input {
+  margin: 5px;
+}
+
+.btn {
+  margin: 10px;
+}
+
+.slct1 {
+  width: 66%;
+  margin-left: 6%;
+}
+
+.mg-l-5 {
+  margin-left: 5%;
+}
+
+.mg-l-10 {
+  margin-left: 11%;
+}
+
+.row-left {
+  float: left;
+  margin-left: 2%;
+};

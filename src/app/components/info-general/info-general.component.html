@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="ptb-10 center">
+    <h2>Información general</h2>
+    <hr>
+    <form class="row">
+      <div class="col">
+        <div class="row">
+          <div class="col col1">
+            <label for="metodo">Método impuesto*:</label>
+            <select name="metodo" id="metodo" [(ngModel)]="seleccionado" (change)="insertarSalario()">
+              <option value="--">--Seleccione--</option>
+              <option value="1">Salario mínimo</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col1">
+            <label for="salario">Tipo cobro de salario*:</label>
+            <select name="salario" id="salario">
+              <option value="--">--Seleccione--</option>
+              <option value="1">Porcentual</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col1">
+            <label for="redondeo">Tipo redondeo*:</label>
+            <select name="salario" id="salario">
+              <option value="--">--Seleccione--</option>
+              <option value="1">Décima</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row" *ngIf="active">
+          <div class="col col2">
+            <div class="col">
+              <label for="salarioMinimo">Salario mínimo {{anio}}:</label>
+              <label for="valor">{{salario}}</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col2">
+            <legend>Aplica cobro interés*:</legend>
+            <div>
+              <input type="radio" id="opcion1" name="cobroInteres" value="si">
+              <label for="opcion1">Si</label>
+              <input type="radio" id="opcion2" name="cobroInteres" value="no">
+              <label for="opcion2">No</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col2">
+            <a href="#configuracion" (click)="changeComponent()">Adicionar configuración</a>
+          </div>
+        </div>
+      </div>
+      <app-table2 *ngIf="!active2"></app-table2>
+      <app-info-detallada *ngIf="active2"></app-info-detallada>
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-primary" (click)="active2=false">Cancelar</button>
+          <button class="btn btn-primary"(click)="active2=false">Guardar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
